@@ -5,14 +5,9 @@ using UnityEngine;
 
 public class Fighter : Player
 {
-//     public float playerSpeed = 3;
-//     public int hp = 150;
-//     public int attackSpeed = 1;
-//     public int projectiles = 1;
-//     public int currentXp = 0;
-//     public int maxXp = 500;
     private Transform _transform;
-
+    
+    
     private void Awake()
     {
         _transform = GetComponent<Transform>();
@@ -21,11 +16,20 @@ public class Fighter : Player
 
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+        transform = GetComponent<Transform>();
     }
 
     void Update()
     {
         Movement(playerSpeed, _transform);
+        if (lookLeft)
+        {
+            transform.rotation = new Quaternion(0, 180, 0, 0);
+        }
+        else
+        {
+            transform.rotation = new Quaternion(0, 0, 0, 0);
+        }
     }
 }
