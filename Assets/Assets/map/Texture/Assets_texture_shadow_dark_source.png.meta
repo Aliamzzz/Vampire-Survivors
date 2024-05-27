@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 13f31724141bcbd448c04fd5aa08cb59
+guid: e5abdd66caa946f4d9476addd9f44141
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -107,7 +107,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TX Props_0
+      name: Assets_texture_shadow_dark_source_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 448
-        width: 32
-        height: 46
+        x: 4
+        y: 371
+        width: 55
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6db1424544b055440b14b0268a00ef71
-      internalID: 1488660818
+      spriteID: 5ddfb7c2260fd0347b7c8ab30dfdfa19
+      internalID: -1293837584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_1
+      name: Assets_texture_shadow_dark_source_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 451
-        width: 32
-        height: 31
+        x: 66
+        y: 371
+        width: 58
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9129aea5ee0030142a5dc5c3b4f9a892
-      internalID: -1110003614
+      spriteID: 5876e1661e7ed8c40a35f21b2e5ee333
+      internalID: -612984222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_2
+      name: Assets_texture_shadow_dark_source_2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 448
-        width: 32
-        height: 46
+        x: 128
+        y: 368
+        width: 80
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccd2f6ac66071e540a8a913635678d08
-      internalID: 604573561
+      spriteID: c3969bc7af5fa7f4eb59787f3cc4ad10
+      internalID: 191667715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_3
+      name: Assets_texture_shadow_dark_source_3
       rect:
         serializedVersion: 2
-        x: 227
-        y: 451
-        width: 26
-        height: 52
+        x: 210
+        y: 374
+        width: 60
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b975e7690a642e42a0a250857e41646
-      internalID: -1253240543
+      spriteID: 65fb4ebfb5dffb743b5538be5f9d1f02
+      internalID: 2040279103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_4
+      name: Assets_texture_shadow_dark_source_4
       rect:
         serializedVersion: 2
-        x: 270
-        y: 478
-        width: 5
-        height: 5
+        x: 272
+        y: 370
+        width: 63
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139efaaa2f6364f41a9716b25d3f71bf
-      internalID: -136623697
+      spriteID: 4d4a5b31f509aba4ba49c21e17a044a7
+      internalID: -1521502187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_5
+      name: Assets_texture_shadow_dark_source_5
       rect:
         serializedVersion: 2
-        x: 292
-        y: 452
+        x: 337
+        y: 368
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5439a376c5d11cb47891c1980272993a
+      internalID: -1930240122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 312
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45e04dd552c8834bb52c9c93f25dfac
+      internalID: -640065710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 290
+        width: 68
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70b67f5071262b499926ad4110f028b
+      internalID: -1998832627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 292
+        width: 78
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469a22058f60b2049affeb5b8810a76f
+      internalID: 1180485209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 295
         width: 56
-        height: 41
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,40 +326,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f145c49f30c64441b85a95501b77cc0
-      internalID: -1625191401
+      spriteID: 993a1bd48e8a7624191d1b00bdcf1588
+      internalID: 366649123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_6
+      name: Assets_texture_shadow_dark_source_10
       rect:
         serializedVersion: 2
-        x: 387
-        y: 449
-        width: 27
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7e96f23d0e59b542b2c0462c93f1553
-      internalID: -800622888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_7
-      rect:
-        serializedVersion: 2
-        x: 445
-        y: 419
-        width: 46
+        x: 224
+        y: 293
+        width: 79
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aef8aa5c844734048b18b721ce1a5abb
-      internalID: -456822594
+      spriteID: 0746f08cea1c7614aba2fb123ceadeec
+      internalID: -1569374257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_8
+      name: Assets_texture_shadow_dark_source_11
       rect:
         serializedVersion: 2
-        x: 270
-        y: 457
-        width: 5
-        height: 19
+        x: 307
+        y: 288
+        width: 75
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,754 +368,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99dab8a6f03874446882b001fd226bc2
-      internalID: -1692509525
+      spriteID: 123aab07ddb3f2c47a98edb02517822e
+      internalID: 1875108729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_9
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 359
-        width: 41
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be08c29c9eae8f34a9723da3c5bb1aa3
-      internalID: -980562152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_10
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 387
-        width: 32
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fafcf7466c93b9942951a26c1a2f380b
-      internalID: 129647606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_11
-      rect:
-        serializedVersion: 2
-        x: 163
-        y: 387
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6aaf9df049cc8524e8baef899940a663
-      internalID: 129634965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_12
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 355
-        width: 26
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 344729bbbc5c71d4d8c6c0dd4fca70e3
-      internalID: 752589961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_13
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 396
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a1edf121d115c04a8f05723ebb0dea2
-      internalID: -1506932938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_14
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 389
-        width: 64
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69289b00a496a944c86f333685d3a288
-      internalID: -511442448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_15
+      name: Assets_texture_shadow_dark_source_12
       rect:
         serializedVersion: 2
         x: 387
-        y: 353
-        width: 27
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a97372f1283840c4eb0ceea44770821c
-      internalID: -1879874398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_16
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 389
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53d1c68d3f9d7414aae049d28990a24d
-      internalID: -1344312280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_17
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 357
-        width: 22
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7db03f155a447e04fa3fa7657c9be787
-      internalID: -1975337662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_18
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 382
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ba896a78ae86bc4c9cb5b31fa96c17d
-      internalID: -1911016378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_19
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 375
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9914e90865fda934bb110c2b0465a760
-      internalID: -1171273444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_20
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 368
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44a97bd728fc48845b7156a16e8978e1
-      internalID: 267722793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_21
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 361
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 881eed7828854424d90119830e0364c5
-      internalID: 1492434579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_22
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 293
-        width: 9
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5027c837efa069e468520341bf28eb60
-      internalID: -56020534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_23
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 293
-        width: 9
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09c8b532cd9c6e546b40ca9ec6ec2635
-      internalID: 1742343374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_24
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 320
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2503feca89321f45b38ccb5411e0d08
-      internalID: -198710447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_25
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 323
-        width: 28
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82b4191041be659409d6ddf896f871cc
-      internalID: 1068606885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_26
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 291
-        width: 48
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0447b937a6cd49f4cb890f9ea6d28f39
-      internalID: 95346796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_27
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 297
-        width: 32
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a893ee575e611343a3305ea2a26e256
-      internalID: 536961415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_28
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 261
-        width: 32
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00c553f90f4f1934abce3fef4914775c
-      internalID: 1447794582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_29
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 256
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 673c7da16b753644f85f4df4292cecc3
-      internalID: 1086517993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_30
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 261
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9d982ca09b62a14893a9ba51fc9cf27
-      internalID: -1969398718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_31
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 232
-        width: 30
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8504ca353a04c96459733cd97428a532
-      internalID: -206558779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_32
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 261
-        width: 32
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b4ae2642645ba545a1c9f44aa6818af
-      internalID: 1098932116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_33
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 232
-        width: 30
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcbc8bffcf724874aa5feb55673caba1
-      internalID: 1062556915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_34
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 234
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4238738af51537a4f83009b2e26e5d76
-      internalID: 695083822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_35
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 241
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f6c1f569898cf14ab4deba2019f15ca
-      internalID: -343505514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_36
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 234
-        width: 5
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1c52a51355cdc946ba05fa384931175
-      internalID: 82966506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_37
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 163
-        width: 94
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac22eb05ab081ea46a7249d4b4a2d883
-      internalID: -2063811987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_38
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 197
-        width: 25
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f31b7faee999e643ab708e7015de126
-      internalID: 1766198825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_39
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 169
-        width: 26
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c4a8f7d7266c41438ce6ad9620c747b
-      internalID: -1779933749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_40
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 160
-        width: 32
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46a7971df96558341a33d1a15ee590a9
-      internalID: 151803571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_41
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 132
-        width: 21
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0edbebf1bf8897d48a64db3cd98ea154
-      internalID: -1193485930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_42
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 104
-        width: 55
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf817f7cf9804654dab4b106d24bd9d6
-      internalID: 797040772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_43
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 38
-        width: 57
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 151115723d9a58343807a5fcf3f3ff66
-      internalID: 1604966222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Props_44
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 10
-        width: 11
+        y: 356
+        width: 12
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1061,20 +389,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2bb396518cf14c4da2c18acdd879c5c
-      internalID: -1096474945
+      spriteID: 6de61aa72d5665d49a4ea081db7b9615
+      internalID: 1668594572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_45
+      name: Assets_texture_shadow_dark_source_13
       rect:
         serializedVersion: 2
-        x: 40
-        y: 8
+        x: 161
+        y: 313
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208a507c41cce8442aedee2948390a8d
+      internalID: -1014454656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 310
         width: 16
-        height: 14
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1082,20 +431,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c86cae3060edbf344bf78e1ec147ffcb
-      internalID: 230283954
+      spriteID: 63efb4a1dcaea2e45854c060ed6284b0
+      internalID: 2059282292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_46
+      name: Assets_texture_shadow_dark_source_15
       rect:
         serializedVersion: 2
-        x: 68
-        y: 6
-        width: 24
-        height: 19
+        x: 0
+        y: 240
+        width: 48
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1103,20 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f91b45e3c2cd504a9bea61050a7937b
-      internalID: 560462952
+      spriteID: 7b15009748a91234ea78393a10c0b85c
+      internalID: 1635766472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_47
+      name: Assets_texture_shadow_dark_source_16
       rect:
         serializedVersion: 2
-        x: 100
-        y: 6
-        width: 24
-        height: 19
+        x: 53
+        y: 240
+        width: 43
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1124,20 +473,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e203b53f9952ad74c943c8fb6ef47e50
-      internalID: -40712587
+      spriteID: 4b0814ae811071c48ad6df30ac2664dc
+      internalID: -1116340578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_48
+      name: Assets_texture_shadow_dark_source_17
       rect:
         serializedVersion: 2
-        x: 130
-        y: 6
-        width: 27
-        height: 22
+        x: 96
+        y: 239
+        width: 46
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1145,20 +494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96236da6f1e13184da3206360003be8b
-      internalID: 1445126819
+      spriteID: 12358b17670b266448fe664692642dd2
+      internalID: -1728092554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_49
+      name: Assets_texture_shadow_dark_source_18
       rect:
         serializedVersion: 2
-        x: 162
-        y: 3
-        width: 27
-        height: 27
+        x: 144
+        y: 241
+        width: 48
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1166,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4099bcc91266e46ac0ab8f0ce88770
-      internalID: -927914425
+      spriteID: 1963510fac8013e47ab588b1091a179d
+      internalID: 632505612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_50
+      name: Assets_texture_shadow_dark_source_19
       rect:
         serializedVersion: 2
-        x: 231
-        y: 7
-        width: 18
-        height: 16
+        x: 193
+        y: 240
+        width: 46
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1187,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ff4acf093b55af40820d23125b18f9e
-      internalID: 1716758541
+      spriteID: 9b6aa66910256964a9eb38f528b63cf2
+      internalID: 1879421236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_51
+      name: Assets_texture_shadow_dark_source_20
       rect:
         serializedVersion: 2
-        x: 263
-        y: 8
-        width: 19
-        height: 16
+        x: 243
+        y: 243
+        width: 44
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1208,20 +557,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ff240fb7e5c3a547b50d058f524f6c7
-      internalID: -1759295548
+      spriteID: 369c9e91e7289f94f934e1267b6cf41e
+      internalID: -1897373755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Props_52
+      name: Assets_texture_shadow_dark_source_21
       rect:
         serializedVersion: 2
         x: 289
-        y: 7
-        width: 31
-        height: 19
+        y: 242
+        width: 47
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1229,8 +578,470 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4705359853722b343b3f58ef2a141a5f
-      internalID: -360383116
+      spriteID: 1d20200c3105e4449950a4db72f91b1a
+      internalID: -1361894972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 247
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1294ab15a6fcf49aafc97018559fa9
+      internalID: -319446953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54dc34e62c6de248bed8e886af187e5
+      internalID: -482490924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_24
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 278
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd6497805ae7954caf6636ba2f121df
+      internalID: 1788113661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 244
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33c49bfd24f97242b183073d9f91191
+      internalID: 1645323652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_26
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 273
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef9e0f80da02514790a0cc68cbeba4c
+      internalID: -1602763286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_27
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 144
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1801adb2945507c48a03f2807e64a116
+      internalID: 1165560267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_28
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 144
+        width: 107
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795c91e98704aeb408c83f65a173e2d2
+      internalID: 1177430865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_29
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 144
+        width: 83
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c316fac68acb7047977140dd6b4585c
+      internalID: 775361554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_30
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 152
+        width: 85
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26820b9a8ccf1c4da28aa5eeb4a0639
+      internalID: 101395167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 214
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae29dbb5b886df847af4af0938971e13
+      internalID: 453469257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_32
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 209
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735104550ccdd7349a0cc56ccdfea608
+      internalID: -46415822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_33
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 144
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00df1a868cfcaf34da38925e80767643
+      internalID: -1301291447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_34
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 181
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fec9dbe25e4884d967b85ac7b2c22f
+      internalID: -379704704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 164
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd378621de44af4692eef812e73ae2e
+      internalID: 1564831935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_36
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 147
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97df113675d7b9489c17ceefe28f017
+      internalID: -287761689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 73
+        width: 69
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fc02ede58206242a9f1fc07176f5c4
+      internalID: 181575467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_38
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 39
+        width: 107
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d49d69fdea30b469eb432afafdd606
+      internalID: -1719043402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_39
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 34
+        width: 106
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80503260cdbcddb4d9354810e0632d29
+      internalID: -297276693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_40
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 32
+        width: 104
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e587787ec7d534f85a052de0f9d2a2
+      internalID: -1508983908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_41
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 112
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237afc6befcacd94aa9e2a82d9e62f39
+      internalID: 2132680811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_42
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 81
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f945f055de485c541a3d8c67bc125a59
+      internalID: 2009761616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_texture_shadow_dark_source_43
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a237d534b2937734b80654440f86715f
+      internalID: 1449508246
       vertices: []
       indices: 
       edges: []
@@ -1246,59 +1057,50 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TX Props_0: 1488660818
-      TX Props_1: -1110003614
-      TX Props_10: 129647606
-      TX Props_11: 129634965
-      TX Props_12: 752589961
-      TX Props_13: -1506932938
-      TX Props_14: -511442448
-      TX Props_15: -1879874398
-      TX Props_16: -1344312280
-      TX Props_17: -1975337662
-      TX Props_18: -1911016378
-      TX Props_19: -1171273444
-      TX Props_2: 604573561
-      TX Props_20: 267722793
-      TX Props_21: 1492434579
-      TX Props_22: -56020534
-      TX Props_23: 1742343374
-      TX Props_24: -198710447
-      TX Props_25: 1068606885
-      TX Props_26: 95346796
-      TX Props_27: 536961415
-      TX Props_28: 1447794582
-      TX Props_29: 1086517993
-      TX Props_3: -1253240543
-      TX Props_30: -1969398718
-      TX Props_31: -206558779
-      TX Props_32: 1098932116
-      TX Props_33: 1062556915
-      TX Props_34: 695083822
-      TX Props_35: -343505514
-      TX Props_36: 82966506
-      TX Props_37: -2063811987
-      TX Props_38: 1766198825
-      TX Props_39: -1779933749
-      TX Props_4: -136623697
-      TX Props_40: 151803571
-      TX Props_41: -1193485930
-      TX Props_42: 797040772
-      TX Props_43: 1604966222
-      TX Props_44: -1096474945
-      TX Props_45: 230283954
-      TX Props_46: 560462952
-      TX Props_47: -40712587
-      TX Props_48: 1445126819
-      TX Props_49: -927914425
-      TX Props_5: -1625191401
-      TX Props_50: 1716758541
-      TX Props_51: -1759295548
-      TX Props_52: -360383116
-      TX Props_6: -800622888
-      TX Props_7: -456822594
-      TX Props_8: -1692509525
-      TX Props_9: -980562152
+      Assets_texture_shadow_dark_source_0: -1293837584
+      Assets_texture_shadow_dark_source_1: -612984222
+      Assets_texture_shadow_dark_source_10: -1569374257
+      Assets_texture_shadow_dark_source_11: 1875108729
+      Assets_texture_shadow_dark_source_12: 1668594572
+      Assets_texture_shadow_dark_source_13: -1014454656
+      Assets_texture_shadow_dark_source_14: 2059282292
+      Assets_texture_shadow_dark_source_15: 1635766472
+      Assets_texture_shadow_dark_source_16: -1116340578
+      Assets_texture_shadow_dark_source_17: -1728092554
+      Assets_texture_shadow_dark_source_18: 632505612
+      Assets_texture_shadow_dark_source_19: 1879421236
+      Assets_texture_shadow_dark_source_2: 191667715
+      Assets_texture_shadow_dark_source_20: -1897373755
+      Assets_texture_shadow_dark_source_21: -1361894972
+      Assets_texture_shadow_dark_source_22: -319446953
+      Assets_texture_shadow_dark_source_23: -482490924
+      Assets_texture_shadow_dark_source_24: 1788113661
+      Assets_texture_shadow_dark_source_25: 1645323652
+      Assets_texture_shadow_dark_source_26: -1602763286
+      Assets_texture_shadow_dark_source_27: 1165560267
+      Assets_texture_shadow_dark_source_28: 1177430865
+      Assets_texture_shadow_dark_source_29: 775361554
+      Assets_texture_shadow_dark_source_3: 2040279103
+      Assets_texture_shadow_dark_source_30: 101395167
+      Assets_texture_shadow_dark_source_31: 453469257
+      Assets_texture_shadow_dark_source_32: -46415822
+      Assets_texture_shadow_dark_source_33: -1301291447
+      Assets_texture_shadow_dark_source_34: -379704704
+      Assets_texture_shadow_dark_source_35: 1564831935
+      Assets_texture_shadow_dark_source_36: -287761689
+      Assets_texture_shadow_dark_source_37: 181575467
+      Assets_texture_shadow_dark_source_38: -1719043402
+      Assets_texture_shadow_dark_source_39: -297276693
+      Assets_texture_shadow_dark_source_4: -1521502187
+      Assets_texture_shadow_dark_source_40: -1508983908
+      Assets_texture_shadow_dark_source_41: 2132680811
+      Assets_texture_shadow_dark_source_42: 2009761616
+      Assets_texture_shadow_dark_source_43: 1449508246
+      Assets_texture_shadow_dark_source_5: -1930240122
+      Assets_texture_shadow_dark_source_6: -640065710
+      Assets_texture_shadow_dark_source_7: -1998832627
+      Assets_texture_shadow_dark_source_8: 1180485209
+      Assets_texture_shadow_dark_source_9: 366649123
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
