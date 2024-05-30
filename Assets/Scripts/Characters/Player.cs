@@ -16,32 +16,39 @@ public abstract class Player : MonoBehaviour
 
     public Camera mainCamera;
 
+    public Collider collider;
+    private void Start()
+    {
+        collider = GetComponent<Collider>();
+    }
+
     public void Movement(float playerSpeed, Transform _transform)
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             _transform.position += new Vector3(0, playerSpeed, 0) * Time.deltaTime;
-            mainCamera.transform.position += new Vector3(0, playerSpeed, 0) * Time.deltaTime;
+            // mainCamera.transform.position += new Vector3(_transform.position.y, playerSpeed, 0) * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             _transform.position += new Vector3(0, -playerSpeed, 0) * Time.deltaTime;
-            mainCamera.transform.position += new Vector3(0, -playerSpeed, 0) * Time.deltaTime;
+            // mainCamera.transform.position += new Vector3(0, -playerSpeed, 0) * Time.deltaTime;
+
         }
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             lookLeft = true;
             _transform.position += new Vector3(-playerSpeed, 0, 0) * Time.deltaTime;
-            mainCamera.transform.position += new Vector3(-playerSpeed, 0, 0) * Time.deltaTime;
+            // mainCamera.transform.position += new Vector3(-playerSpeed, 0, 0) * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             lookLeft = false;
             _transform.position += new Vector3(playerSpeed, 0, 0) * Time.deltaTime;
-            mainCamera.transform.position += new Vector3(playerSpeed, 0, 0) * Time.deltaTime;
+            // mainCamera.transform.position += new Vector3(playerSpeed, 0, 0) * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)

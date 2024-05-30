@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 5432340095175227787}
   - component: {fileID: 4269095795317269920}
   - component: {fileID: -706172232721724929}
+  - component: {fileID: -5169457218223445492}
   m_Layer: 0
   m_Name: Assets_texture_shadow_dark_source_17
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1728092554, guid: e5abdd66caa946f4d9476addd9f44141, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -120,8 +121,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.050359547, y: 0.57351637}
-  - {x: -0.33213282, y: 0.41612792}
+  - {x: 0.022856478, y: -0.031555116}
+  - {x: -0.15645471, y: -0.04873678}
+  - {x: -0.34588474, y: 0.117030025}
   - {x: -0.5162449, y: 0.117568135}
   - {x: -0.5787978, y: 0.004854113}
   - {x: -0.51820564, y: -0.2665736}
@@ -130,11 +132,39 @@ EdgeCollider2D:
   - {x: 0.10368633, y: -0.44714817}
   - {x: 0.47048378, y: -0.34545434}
   - {x: 0.46221066, y: -0.08535567}
-  - {x: 0.42474842, y: 0.08822942}
-  - {x: 0.41064644, y: 0.27945316}
-  - {x: 0.40944004, y: 0.56864464}
-  - {x: 0.05332774, y: 0.57027596}
+  - {x: 0.43506226, y: -0.01146996}
+  - {x: 0.36939183, y: -0.0058930516}
+  - {x: 0.3234923, y: -0.03642702}
+  - {x: 0.18597555, y: -0.03298892}
+  - {x: -0.0051175915, y: -0.021043945}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!50 &-5169457218223445492
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132962829560604649}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
