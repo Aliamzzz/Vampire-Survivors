@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5432340095175227787}
   - component: {fileID: 4269095795317269920}
-  - component: {fileID: 4429820369427008406}
+  - component: {fileID: -706172232721724929}
   m_Layer: 0
   m_Name: Assets_texture_shadow_dark_source_17
   m_TagString: Untagged
@@ -28,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.291238, y: 0.45505804, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.28, y: 1.28, z: 1.28}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!893571522 &4429820369427008406
-CustomCollider2D:
+--- !u!68 &-706172232721724929
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,6 +118,23 @@ CustomCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_CustomShapes:
-    m_Shapes: []
-    m_Vertices: []
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.050359547, y: 0.57351637}
+  - {x: -0.33213282, y: 0.41612792}
+  - {x: -0.5162449, y: 0.117568135}
+  - {x: -0.5787978, y: 0.004854113}
+  - {x: -0.51820564, y: -0.2665736}
+  - {x: -0.47572136, y: -0.39321184}
+  - {x: -0.09369373, y: -0.5006496}
+  - {x: 0.10368633, y: -0.44714817}
+  - {x: 0.47048378, y: -0.34545434}
+  - {x: 0.46221066, y: -0.08535567}
+  - {x: 0.42474842, y: 0.08822942}
+  - {x: 0.41064644, y: 0.27945316}
+  - {x: 0.40944004, y: 0.56864464}
+  - {x: 0.05332774, y: 0.57027596}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

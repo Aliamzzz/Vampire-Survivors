@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8165239477257910948}
   - component: {fileID: 4574567326679445269}
+  - component: {fileID: 448829300997114947}
   m_Layer: 0
   m_Name: Assets_texture_shadow_dark_source_36
   m_TagString: Untagged
@@ -84,3 +85,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &448829300997114947
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983541350074453587}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.006550014, y: 0.27459347}
+  - {x: -0.32293582, y: 0.26869273}
+  - {x: -0.33746505, y: 0.10087407}
+  - {x: -0.398093, y: -0.023911953}
+  - {x: -0.36748958, y: -0.16290879}
+  - {x: -0.22457814, y: -0.21107244}
+  - {x: 0.017403841, y: -0.23591828}
+  - {x: 0.17465901, y: -0.2746718}
+  - {x: 0.3375659, y: -0.21736348}
+  - {x: 0.37505794, y: -0.10227823}
+  - {x: 0.3772595, y: -0.02724111}
+  - {x: 0.37526107, y: 0.05084181}
+  - {x: 0.32813573, y: 0.14216721}
+  - {x: 0.19750714, y: 0.27854133}
+  - {x: -0.08820444, y: 0.26879227}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
