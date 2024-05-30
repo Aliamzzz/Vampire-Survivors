@@ -11,7 +11,6 @@ public class WorldScroling : MonoBehaviour
     Vector2Int OnTileGridPlayerPosition;
     [SerializeField] private float tileSize = 6f;
     GameObject[,] terrainTiles;
-
     [SerializeField] int terrainTileHorizontalCount;
     [SerializeField] int terrainTileVerticalCount;
 
@@ -20,7 +19,6 @@ public class WorldScroling : MonoBehaviour
     private void Awake()
     {
         terrainTiles = new GameObject[terrainTileHorizontalCount, terrainTileVerticalCount];
-        
     }
 
     private void Start()
@@ -81,10 +79,6 @@ public class WorldScroling : MonoBehaviour
         }
 
         return (int)currentValue;
-        // if(OnTileGridPlayerPosition.x >= 0 ) OnTileGridPlayerPosition.x = playerTilePosition.x % terrainTileHorizontalCount;
-        // else OnTileGridPlayerPosition.x = terrainTileHorizontalCount - 1 + playerTilePosition.x % terrainTileHorizontalCount;
-        // if(OnTileGridPlayerPosition.y >= 0 ) OnTileGridPlayerPosition.y = playerTilePosition.y % terrainTileVerticalCount;
-        // else OnTileGridPlayerPosition.y = terrainTileVerticalCount - 1 + playerTilePosition.y % terrainTileVerticalCount;
     }
 
     public Vector3 calculateTilePosition(int v1, int v2)

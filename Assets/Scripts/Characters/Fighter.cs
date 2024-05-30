@@ -23,6 +23,7 @@ public class Fighter : Player
     void Update()
     {
         Movement(playerSpeed, _transform);
+        Camera.main.transform.position = new Vector3(_transform.position.x , _transform.position.y , -1.9728f);
         if (lookLeft)
         {
             transform.rotation = new Quaternion(0, 180, 0, 0);
