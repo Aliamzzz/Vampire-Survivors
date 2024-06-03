@@ -1,35 +1,38 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Slime : Player
+public class Slime : MonoBehaviour
 {
-    private Transform _transform;
+
+    //private Rigidbody2D _rigidbody2D;
+    //private Player player;
+    private SpriteRenderer _spriteRenderer;
+    public GameObject target;
+    public float speed = 2f;
+
+    public int HP = 10;
+    // private Vector3 directionToPlayer;
+    // private Vector3 localScale;
+    //
+    private void Start()
+    {
+        target = GameObject.Find("center");
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     
-    private void Awake()
+    void Update ()
     {
-        _transform = GetComponent<Transform>();
-        this.playerSpeed = 3;
-    }
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-        transform = GetComponent<Transform>();
-    }
-
-    void Update()
-    {
-        Movement(playerSpeed, _transform);
-        Camera.main.transform.position = new Vector3(_transform.position.x , _transform.position.y , -1.9728f);
-        if (lookLeft)
-        {
-            transform.rotation = new Quaternion(0, 180, 0, 0);
+        transform.Translate((target.transform.position - transform.position).normalized * (speed*Time.deltaTime));
+        if((target.transform.position - transform.position).normalized.x > 0) 
+        { 
+            _spriteRenderer.flipX = true;
         }
-        else
-        {
-            transform.rotation = new Quaternion(0, 0, 0, 0);
+        else 
+        { 
+            _spriteRenderer.flipX = false;
         }
     }
 }

@@ -7,7 +7,7 @@
 //     
 //     public Transform transform;
 //     
-//     public float playerSpeed;
+//     public float speed;
 //     
 //     public Animator animator;
 //
