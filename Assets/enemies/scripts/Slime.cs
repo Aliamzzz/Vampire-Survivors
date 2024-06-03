@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Fighter : Player
+public class Slime : Player
 {
     private Transform _transform;
-    public int HP = 150;
     
     private void Awake()
     {
