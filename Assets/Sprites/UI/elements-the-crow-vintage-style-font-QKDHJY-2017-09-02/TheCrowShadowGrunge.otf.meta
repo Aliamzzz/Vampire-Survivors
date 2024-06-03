@@ -3,14 +3,15 @@ guid: 72863b9567d4f4c41b778b2a61f6ae3f
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
-  forceTextureCase: -2
+  fontSize: 300
+  forceTextureCase: -1
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontNames:
   - The Crow Shadow Grunge
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 294be7ed463ddeb498be84cf80d2cae2, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

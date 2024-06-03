@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Timeline;
 using Object = System.Object;
 
 public class WeaponGenerator : MonoBehaviour
@@ -13,6 +14,7 @@ public class WeaponGenerator : MonoBehaviour
     public Transform firePoint;
     [SerializeField] private Player player;
     [SerializeField] private GameObject sword;
+    [SerializeField] private GameObject sound;
 
     private void Update()
     {
@@ -28,10 +30,12 @@ public class WeaponGenerator : MonoBehaviour
         if (time > 0)
         {
             time -= Time.deltaTime;
+            sound.SetActive(true);
         }
 
         if (time <= 0)
         {
+            sound.SetActive(false);
             if (player.lookLeft)
             {
                 Instantiate(sword, transform.position,  Quaternion.identity);

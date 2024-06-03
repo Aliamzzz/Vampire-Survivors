@@ -3,14 +3,15 @@ guid: 4586e63c4cfb41c4788c30b6eb285962
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
+  fontSize: 300
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontNames:
   - The Crow Inline
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 48b9e585db40bf247b23f69e072bd383, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
