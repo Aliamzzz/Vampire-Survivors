@@ -20,10 +20,8 @@ public class WeaponGenerator : MonoBehaviour
     {
         Spawn();
     }
-
-    private void Start()
-    {
-    }
+    
+    
 
     private void Spawn()
     {

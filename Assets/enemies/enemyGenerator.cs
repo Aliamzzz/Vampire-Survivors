@@ -11,7 +11,7 @@ public class enemyGenerator : MonoBehaviour
     public Transform player;
     [SerializeField] private GameObject _enemy;
     [SerializeField] private int _maxEnemyCount;
-    private int _currentEnemyCount;
+    public int _currentEnemyCount;
     [SerializeField] private float _spawnRate = 1.5f;
     [SerializeField] private float dangerRadius = 3.0f;
     private bool _canSpawn = true;
@@ -32,6 +32,7 @@ public class enemyGenerator : MonoBehaviour
         {
             Instantiate(_enemy, GetRandomPosition(dangerRadius), quaternion.identity);
             _currentEnemyCount++;
+            //_canSpawn = false;
         }
     }
 

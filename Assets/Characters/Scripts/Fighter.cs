@@ -6,10 +6,11 @@ using UnityEngine;
 public class Fighter : Player
 {
     private Transform _transform;
-    public int HP = 150;
+    public int HP;
     
     private void Awake()
     {
+        HP = 150;
         _transform = GetComponent<Transform>();
         this.playerSpeed = 3;
     }
