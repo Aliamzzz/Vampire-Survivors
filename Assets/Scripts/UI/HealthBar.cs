@@ -9,12 +9,13 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private Image bar;
     [SerializeField] private GameObject fullHeart;
     [SerializeField] private GameObject halfHeart;
-    private Fighter hero;
-    private int _healthOfPlayer = 150;
+    public Fighter hero;
+    private float _healthOfPlayer;
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.Space)) takeDamege(2);
+        _healthOfPlayer = hero.HP;
+        takeDamege(_healthOfPlayer);
         if (_healthOfPlayer > 80)
         {
             fullHeart.SetActive(true);
@@ -27,9 +28,8 @@ public class HealthBar : MonoBehaviour
         }
     }
 
-    public void takeDamege(int damage)
-    {
-        _healthOfPlayer -= damage;
-        bar.fillAmount = _healthOfPlayer / 150f;
+    public void takeDamege(float health)
+    { 
+        bar.fillAmount = health / 150f;
     }
 }

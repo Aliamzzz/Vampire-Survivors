@@ -680,8 +680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.199997, y: 0.923}
-  m_SizeDelta: {x: 17.599, y: 18.153}
+  m_AnchoredPosition: {x: 0.5550003, y: 0.923}
+  m_SizeDelta: {x: 12.929, y: 18.153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &814661320
 MonoBehaviour:
@@ -927,8 +927,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -239, y: 239}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -353.09012, y: 239}
+  m_SizeDelta: {x: 119.65, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1026214850
 MonoBehaviour:
@@ -1321,7 +1321,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 33b516c61a078454996ead735b3e0ec6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2d8276ed10fe1e04a99e95127928533a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.397
   m_Pitch: 1
@@ -1784,6 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 0}
+  barHealth: {fileID: 0}
 --- !u!1 &1859382148
 GameObject:
   m_ObjectHideFlags: 0

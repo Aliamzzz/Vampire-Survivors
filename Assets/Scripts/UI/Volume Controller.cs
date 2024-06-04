@@ -10,14 +10,24 @@ public class VolumeController : MonoBehaviour
     [SerializeField] private Text muteText;
     void Start()
     {
-        _scrollbar.value = 0.5f;
-        audioChanger();
         muteText.text = "Music is Playing!";
+        if (!PlayerPrefs.HasKey("musicVolume"))
+        {
+            PlayerPrefs.SetFloat("musicVolume", 1);
+            load();
+            audioChanger();
+        }
+        else
+        {
+            load();
+            audioChanger();
+        }
     }
     
     public void audioChanger()
     {
         AudioListener.volume = _scrollbar.value;
+        save();
     }
 
     public void soundButton()
@@ -32,6 +42,15 @@ public class VolumeController : MonoBehaviour
         {
             muteText.text = "EveryThing is Mute!";
         }
-        
+    }
+
+    private void load()
+    {
+        _scrollbar.value = PlayerPrefs.GetFloat("musicVolume");
+    }
+
+    private void save()
+    {
+        PlayerPrefs.SetFloat("musicVolume", _scrollbar.value);
     }
 }
