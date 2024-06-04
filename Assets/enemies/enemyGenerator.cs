@@ -32,7 +32,8 @@ public class enemyGenerator : MonoBehaviour
         {
             Instantiate(_enemy, GetRandomPosition(dangerRadius), quaternion.identity);
             _currentEnemyCount++;
-            //_canSpawn = false;
+            _canSpawn = false;
+            StartCoroutine(spawn_delay());
         }
     }
 

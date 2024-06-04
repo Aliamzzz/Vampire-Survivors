@@ -13,6 +13,7 @@ public class Slime : MonoBehaviour
     public GameObject target;
     public float speed = 2f;
     public int HP;
+    private bool active = true;
     
     private void Start()
     {
@@ -24,14 +25,22 @@ public class Slime : MonoBehaviour
         
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
+    private IEnumerator delay()
+    {
+        if (!active)
+        {
+            yield return new WaitForSeconds(2f);
+            active = true;
+        }
+    }
     
     void Update ()
     {
-        if (HP > 0 && HP < 100000)  //sharte dovom baraye mast maalie ye buge
+        if (HP > 0)
         {
             transform.Translate((target.transform.position - transform.position).normalized * (speed*Time.deltaTime));
         }
-        if((target.transform.position - transform.position).normalized.x > 0) 
+        if ((target.transform.position - transform.position).normalized.x > 0) 
         { 
             _spriteRenderer.flipX = true;
         }
@@ -40,18 +49,26 @@ public class Slime : MonoBehaviour
             _spriteRenderer.flipX = false;
         }
 
-        if (HP <= 0)
+        if (HP <= 0 && active)
         {
+            
             _destroyObject.enabled = true;
+            gameObject.GetComponent<PolygonCollider2D>().enabled = false;
             player.gameObject.GetComponent<enemyGenerator>()._currentEnemyCount--;
             camera.gameObject.GetComponent<Timer>().kills++;
-            HP = 100000;  //inam bara mast malie bug oomade
+            active = false;
+            StartCoroutine(delay());
         }
 
-        if ((target.transform.position - transform.position).x + (target.transform.position - transform.position).y > 20)
+        if (Math.Abs((target.transform.position - transform.position).x) + Math.Abs((target.transform.position - transform.position).y) > 15)
         {
             _destroyObject.enabled = true;
-            player.gameObject.GetComponent<enemyGenerator>()._currentEnemyCount--;
+            if (active)
+            {
+                player.gameObject.GetComponent<enemyGenerator>()._currentEnemyCount--;
+                active = false;
+                StartCoroutine(delay());
+            }
         }
     }
 }

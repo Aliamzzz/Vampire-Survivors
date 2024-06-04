@@ -6,7 +6,7 @@ using UnityEngine;
 public class Fighter : Player
 {
     private Transform _transform;
-    public int HP;
+    public float HP;
     
     private void Awake()
     {
