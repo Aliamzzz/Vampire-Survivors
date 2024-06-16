@@ -1795,6 +1795,7 @@ GameObject:
   - component: {fileID: 520474092}
   - component: {fileID: 520474091}
   - component: {fileID: 520474090}
+  - component: {fileID: 520474093}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1852,6 +1853,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &520474093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520474089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef461e36e9d55c048908b35d78440d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyGenerator: {fileID: 883716782}
 --- !u!1001 &524322309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3676,12 +3690,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 808474a19fad7e24f8279e60d7e7c982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 883716776}
   _enemy: {fileID: 7723170634835189795, guid: d7ac5522a0f5f574282b336c87bbaa3a, type: 3}
+  dangerRadius: 9
+  player: {fileID: 883716776}
   _maxEnemyCount: 10
   _currentEnemyCount: 0
   _spawnRate: 1.5
-  dangerRadius: 9
 --- !u!1001 &896442346
 PrefabInstance:
   m_ObjectHideFlags: 0

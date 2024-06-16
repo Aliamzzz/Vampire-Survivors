@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DamageToPlayer : MonoBehaviour
 {
-    public float damage;
+    private float damage;
     private bool active = true;
     [SerializeField] private GameObject player;
     private GameObject slime;
@@ -23,18 +23,6 @@ public class DamageToPlayer : MonoBehaviour
             float hpPlayer = player.gameObject.GetComponent<Fighter>().HP - damage;
             player.gameObject.GetComponent<Fighter>().HP -= damage;
             player.gameObject.GetComponent<Animator>().SetFloat("HP", hpPlayer);
-            //active = false;
-            //StartCoroutine(delay());
         }
     }
-
-    // private IEnumerator delay()
-    // {
-    //     if (!active)
-    //     {
-    //         yield return new WaitForSeconds(1.5f);
-    //         active = true;
-    //     }
-    // }
-    
 }

@@ -19,12 +19,11 @@ public abstract class Player : MonoBehaviour
 
     public void Movement(float playerSpeed, Transform _transform)
     {
-        
         Vector3 direction = new Vector3(0,0,0);
         direction.x = Input.GetAxisRaw("Horizontal");
         direction.y = Input.GetAxisRaw("Vertical");
         direction.Normalize();
-        _transform.position += direction * (playerSpeed * Time.deltaTime); 
+        _transform.position += direction * (playerSpeed * Time.deltaTime);
         mainCamera.transform.position += direction * (playerSpeed * Time.deltaTime);
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.S) ||
             Input.GetKey(KeyCode.DownArrow) ||

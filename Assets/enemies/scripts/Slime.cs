@@ -17,13 +17,12 @@ public class Slime : MonoBehaviour
     
     private void Start()
     {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         _destroyObject = GetComponent<DestroyObject>();
         HP = 10;
         camera = GameObject.Find("Main Camera");
         player = GameObject.Find("player");
         target = GameObject.Find("center");
-        
-        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
     private IEnumerator delay()
     {

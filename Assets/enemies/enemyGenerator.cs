@@ -8,12 +8,12 @@ using Random = UnityEngine.Random;
 
 public class enemyGenerator : MonoBehaviour
 {
-    public Transform player;
     [SerializeField] private GameObject _enemy;
+    [SerializeField] private float dangerRadius = 3.0f;
+    public Transform player;
     public int _maxEnemyCount;
     public int _currentEnemyCount;
     public float _spawnRate = 1.5f;
-    [SerializeField] private float dangerRadius = 3.0f;
     private bool _canSpawn = true;
     
 

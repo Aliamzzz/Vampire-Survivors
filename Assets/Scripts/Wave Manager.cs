@@ -14,13 +14,13 @@ public class WaveManager : MonoBehaviour
         
     }
 
-    private IEnumerator spawn_delay(int phaseSeconds)
+    private IEnumerator spawn_delay(int phaseSeconds, int maxEnemy, float spawnRate)
     {
         if (!active)
         {
             yield return new WaitForSeconds(phaseSeconds);
-            enemyGenerator._maxEnemyCount = 20;
-            enemyGenerator._spawnRate = 0.5f;
+            enemyGenerator._maxEnemyCount = maxEnemy;
+            enemyGenerator._spawnRate = spawnRate;
             active = true;
         }
     }
@@ -35,8 +35,7 @@ public class WaveManager : MonoBehaviour
         if (active)
         {
             active = false;
-            StartCoroutine(spawn_delay(60));
-            
+            StartCoroutine(spawn_delay(60, 20, 0.5f));
         }
     }
 
