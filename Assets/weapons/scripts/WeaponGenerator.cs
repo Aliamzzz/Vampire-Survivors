@@ -20,8 +20,11 @@ public class WeaponGenerator : MonoBehaviour
     {
         Spawn();
     }
-    
-    
+
+    private void Awake()
+    {
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+    }
 
     private void Spawn()
     {

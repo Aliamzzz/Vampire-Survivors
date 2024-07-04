@@ -6,14 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public Fighter fighter;
+    public Player player;
     private int healthOfFighter;
     [SerializeField] private GameObject gameOver;
-    
+
+    private void Awake()
+    {
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+    }
+
     private void FixedUpdate()
     {
-        healthOfFighter = (int)fighter.HP;
-        if(fighter.HP <= 0){
+        healthOfFighter = (int)player.HP;
+        if(player.HP <= 0){
             Time.timeScale = 0;
             gameOver.SetActive(true);
         }

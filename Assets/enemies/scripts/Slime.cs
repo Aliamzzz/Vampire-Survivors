@@ -21,7 +21,7 @@ public class Slime : MonoBehaviour
         _destroyObject = GetComponent<DestroyObject>();
         HP = 10;
         camera = GameObject.Find("Main Camera");
-        player = GameObject.Find("player");
+        player = GameObject.FindWithTag("Player");
         target = GameObject.Find("center");
     }
     private IEnumerator delay()

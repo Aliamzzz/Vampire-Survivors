@@ -6,13 +6,13 @@ using UnityEngine;
 public class DamageToPlayer : MonoBehaviour
 {
     private float damage;
-    private bool active = true;
+    //private bool active = true;
     [SerializeField] private GameObject player;
     private GameObject slime;
 
     private void Awake()
     {
-        player = GameObject.Find("player");
+        player = GameObject.FindWithTag("Player");
         damage = 0.3f;
     }
 
@@ -20,8 +20,8 @@ public class DamageToPlayer : MonoBehaviour
     {
         if (gameObject.GetComponent<PolygonCollider2D>().IsTouching(player.GetComponent<BoxCollider2D>()))
         {
-            float hpPlayer = player.gameObject.GetComponent<Fighter>().HP - damage;
-            player.gameObject.GetComponent<Fighter>().HP -= damage;
+            float hpPlayer = player.gameObject.GetComponent<Player>().HP - damage;
+            player.gameObject.GetComponent<Player>().HP -= damage;
             player.gameObject.GetComponent<Animator>().SetFloat("HP", hpPlayer);
         }
     }

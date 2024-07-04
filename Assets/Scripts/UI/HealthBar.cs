@@ -9,12 +9,17 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private Image bar;
     [SerializeField] private GameObject fullHeart;
     [SerializeField] private GameObject halfHeart;
-    public Fighter hero;
+    public Player player;
     private float _healthOfPlayer;
+
+    private void Awake()
+    {
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+    }
 
     private void Update()
     {
-        _healthOfPlayer = hero.HP;
+        _healthOfPlayer = player.HP;
         takeDamege(_healthOfPlayer);
         if (_healthOfPlayer > 80)
         {

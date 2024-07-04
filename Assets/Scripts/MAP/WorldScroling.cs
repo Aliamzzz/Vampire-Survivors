@@ -19,6 +19,7 @@ public class WorldScroling : MonoBehaviour
     private void Awake()
     {
         terrainTiles = new GameObject[terrainTileHorizontalCount, terrainTileVerticalCount];
+        playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
     }
 
     private void Start()
