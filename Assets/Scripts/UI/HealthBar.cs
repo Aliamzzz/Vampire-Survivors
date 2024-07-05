@@ -12,24 +12,27 @@ public class HealthBar : MonoBehaviour
     public Player player;
     private float _healthOfPlayer;
 
-    private void Awake()
+    public void initialing()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
     }
 
     private void Update()
     {
-        _healthOfPlayer = player.HP;
-        takeDamege(_healthOfPlayer);
-        if (_healthOfPlayer > 80)
-        {
-            fullHeart.SetActive(true);
-            halfHeart.SetActive(false);
-        }
-        else
-        {
-            fullHeart.SetActive(false);
-            halfHeart.SetActive(true);
+        if(player != null) {
+            _healthOfPlayer = player.HP;
+
+            takeDamege(_healthOfPlayer);
+            if (_healthOfPlayer > 80)
+            {
+                fullHeart.SetActive(true);
+                halfHeart.SetActive(false);
+            }
+            else
+            {
+                fullHeart.SetActive(false);
+                halfHeart.SetActive(true);
+            }
         }
     }
 

@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class WorldScroling : MonoBehaviour
 {
+    // private Menu _menu; 
+    // [SerializeField] private Transform fighter;
+    // [SerializeField] private Transform assassin;
+    
     [SerializeField] private Transform playerTransform;
     Vector2Int currentTilePosition = new Vector2Int(0, 0);
     [SerializeField] Vector2Int playerTilePosition;
@@ -16,10 +20,15 @@ public class WorldScroling : MonoBehaviour
 
     [SerializeField] int fieldOfVisionHeight = 3;
     [SerializeField] int fieldOfVisionWidth = 3;
+
+
+    public void initialing()
+    {
+        playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+    }
     private void Awake()
     {
         terrainTiles = new GameObject[terrainTileHorizontalCount, terrainTileVerticalCount];
-        playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
     }
 
     private void Start()
@@ -29,17 +38,20 @@ public class WorldScroling : MonoBehaviour
 
     private void Update()
     {
-        playerTilePosition.x = (int)(playerTransform.position.x / tileSize);
-        playerTilePosition.y = (int)(playerTransform.position.y / tileSize);
-
-        playerTilePosition.x -= playerTransform.position.x < 0 ? 1 : 0;
-        playerTilePosition.y -= playerTransform.position.y < 0 ? 1 : 0;
-        if (currentTilePosition != playerTilePosition)
+        if (playerTransform != null)
         {
-            currentTilePosition = playerTilePosition;
-            OnTileGridPlayerPosition.x = calculatePosition(OnTileGridPlayerPosition.x, true);
-            OnTileGridPlayerPosition.y = calculatePosition(OnTileGridPlayerPosition.y, false);
-            UpdateTilesOnScreen();
+            playerTilePosition.x = (int) (playerTransform.position.x / tileSize);
+            playerTilePosition.y = (int) (playerTransform.position.y / tileSize);
+
+            playerTilePosition.x -= playerTransform.position.x < 0 ? 1 : 0;
+            playerTilePosition.y -= playerTransform.position.y < 0 ? 1 : 0;
+            if (currentTilePosition != playerTilePosition)
+            {
+                currentTilePosition = playerTilePosition;
+                OnTileGridPlayerPosition.x = calculatePosition(OnTileGridPlayerPosition.x, true);
+                OnTileGridPlayerPosition.y = calculatePosition(OnTileGridPlayerPosition.y, false);
+                UpdateTilesOnScreen();
+            }
         }
     }
 

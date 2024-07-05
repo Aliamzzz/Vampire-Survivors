@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using UnityEngine;
 
 public class Timer : MonoBehaviour
 { 
@@ -12,6 +13,9 @@ public class Timer : MonoBehaviour
     public int kills = 0;
     [SerializeField] private Text timeBox;
     [SerializeField] private Text killBox;
+    
+    private int xp;
+    [SerializeField] private GameObject levelUp;
     void Start()
     {
         // timeBox.text = startSecTime.ToString("F3");
@@ -27,7 +31,15 @@ public class Timer : MonoBehaviour
             startSecTime += Time.deltaTime;
             if(startSecTime <= 10) timeBox.text = startMinTime + ":0" + (int)startSecTime;
             else timeBox.text = startMinTime + ":" + (int)startSecTime;
-            killBox.text = "Kills: " + kills;
+            killBox.text = "Kills : " + kills;
+
+            if (xp == 100)
+            {
+                Time.timeScale = 0;
+                xp = 0;
+                levelUp.SetActive(true);
+            }
     }
 
+    
 }

@@ -10,7 +10,7 @@ public class GameOver : MonoBehaviour
     private int healthOfFighter;
     [SerializeField] private GameObject gameOver;
 
-    private void Awake()
+    public void initialing()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
     }
@@ -18,10 +18,17 @@ public class GameOver : MonoBehaviour
     private void FixedUpdate()
     {
         healthOfFighter = (int)player.HP;
-        if(player.HP <= 0){
-            Time.timeScale = 0;
-            gameOver.SetActive(true);
+        if (player.HP <= 0)
+        {
+            StartCoroutine(GameOverWithDelay());
         }
+    }
+
+    IEnumerator GameOverWithDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        Time.timeScale = 0;
+        gameOver.SetActive(true);
     }
 
     public void backMenu()
@@ -32,7 +39,6 @@ public class GameOver : MonoBehaviour
 
     public void restart()
     {
-        Time.timeScale = 1;
         SceneManager.LoadScene("Scene 1");
         // gameOver.SetActive(false);
     }
