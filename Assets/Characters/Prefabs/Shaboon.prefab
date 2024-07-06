@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7723170634835189795, guid: 03a2a4226e6449a4b866ee6c79b38188, type: 3}
-  dangerRadius: 3
+  dangerRadius: 9
   player: {fileID: 5367735466973265207}
   _maxEnemyCount: 0
   waveManager: {fileID: 0}

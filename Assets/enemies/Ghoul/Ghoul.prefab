@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc387b7b8e8490439c3dc3cfdff20aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayAfterAnimation: 0
+  delayAfterAnimation: 1
 --- !u!114 &-3982675730301751760
 MonoBehaviour:
   m_ObjectHideFlags: 0
