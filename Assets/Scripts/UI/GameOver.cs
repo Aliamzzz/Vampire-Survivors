@@ -21,6 +21,7 @@ public class GameOver : MonoBehaviour
         if (player.HP <= 0)
         {
             StartCoroutine(GameOverWithDelay());
+            player.alive = false;
         }
     }
 

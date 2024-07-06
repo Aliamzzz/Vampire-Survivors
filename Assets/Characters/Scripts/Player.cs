@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     [HideInInspector] public bool lookLeft;
 
     public Camera mainCamera;
+
+    public bool alive = true;
     
     private void Awake()
     {
@@ -35,7 +37,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Movement(playerSpeed, _transform);
+        if (alive)
+        {
+            Movement(playerSpeed, _transform);
+        }
         Camera.main.transform.position = new Vector3(_transform.position.x , _transform.position.y , -1.9728f);
         if (lookLeft)
         {

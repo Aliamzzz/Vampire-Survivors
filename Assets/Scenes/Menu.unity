@@ -2483,6 +2483,12 @@ MonoBehaviour:
   userPanel: {fileID: 673844787}
   signInPanel: {fileID: 1981198402}
   loginPanel: {fileID: 1033184629}
+  coinText: {fileID: 0}
+  coinNum: 0
+  levelUpPanel: {fileID: 0}
+  maxXP: 25
+  XP: 0
+  levelText: {fileID: 2068842488}
 --- !u!1 &848535477
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,8 +3133,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1519, y: 448.43}
-  m_SizeDelta: {x: 129.4591, y: 125.6134}
+  m_AnchoredPosition: {x: -1491.2, y: 462.8}
+  m_SizeDelta: {x: 69.2198, y: 66.5438}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972025180
 MonoBehaviour:
@@ -3150,7 +3156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7e638556bad542044acfdd063c80dc09, type: 3}
+  m_Sprite: {fileID: 1364918620, guid: 93b2a686b5307f64d94b9d6abf3a7f72, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3376,7 +3382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Best Score : 69'
+  m_text: 'Best Score : 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f72dbbbc166085948be187b0d0b91a34, type: 2}
   m_sharedMaterial: {fileID: 1325394786614526732, guid: f72dbbbc166085948be187b0d0b91a34, type: 2}
@@ -4815,7 +4821,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Coins : 69'
+  m_text: 'Coins : 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f72dbbbc166085948be187b0d0b91a34, type: 2}
   m_sharedMaterial: {fileID: 1325394786614526732, guid: f72dbbbc166085948be187b0d0b91a34, type: 2}

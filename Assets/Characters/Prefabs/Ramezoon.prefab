@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8377448158220552985}
   - component: {fileID: 2299051593922188532}
   - component: {fileID: 702880807045026876}
+  - component: {fileID: 7071027937168319097}
   m_Layer: 0
   m_Name: Ramezoon
   m_TagString: Player
@@ -221,6 +222,24 @@ MonoBehaviour:
   _maxEnemyCount: 10
   _currentEnemyCount: 0
   _spawnRate: 1.5
+--- !u!114 &7071027937168319097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67521300301029381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cf87d27e39a3b4b996a8aae2537002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 3237550257056410187, guid: 609ce3440efccc6419c184557bde8bd6, type: 3}
+  radius: 9
+  player: {fileID: 6517779058150908304}
+  max: 25
+  current: 0
+  _spawnRate: 15
 --- !u!1 &477076066063770298
 GameObject:
   m_ObjectHideFlags: 0

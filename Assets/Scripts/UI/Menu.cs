@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -28,6 +29,15 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject userPanel;
     [SerializeField] private GameObject signInPanel;
     [SerializeField] private GameObject loginPanel;
+
+    [SerializeField] private TextMeshProUGUI coinText;
+    public int coinNum = 0;
+
+    [SerializeField] private GameObject levelUpPanel;
+    public int maxXP = 25;
+    public int XP;
+    [SerializeField] public TextMeshProUGUI levelText;
+    private int level = 1;
 
 
     public void playGame()
@@ -126,4 +136,42 @@ public class Menu : MonoBehaviour
         userPanel.SetActive(false);
         signInPanel.SetActive(true);
     }
+
+    public void Update()
+    {
+        if (SceneManager.GetActiveScene().name.Equals("Scene 1"))
+        {
+            coinText.text = "Coins : " + coinNum;
+        }
+
+        if (XP > maxXP)
+        {
+            inGameLevelUp();
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            pauseGame();
+        }
+    }
+
+    public void addCoin()
+    {
+        coinNum++;
+    }
+
+    public void addXP()
+    {
+        XP++;
+    }
+
+    private void inGameLevelUp()
+    {
+        Time.timeScale = 0;
+        maxXP += 25;
+        XP = 0;
+        levelUpPanel.SetActive(true);
+        levelText.text = "Level : " + ++level;
+    }
+    
 }

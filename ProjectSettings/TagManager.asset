@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - weapon
   - Center
+  - pause
   layers:
   - Default
   - TransparentFX

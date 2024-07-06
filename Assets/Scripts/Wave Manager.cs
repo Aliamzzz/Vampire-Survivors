@@ -6,12 +6,12 @@ using UnityEngine;
 public class WaveManager : MonoBehaviour
 {
     private bool active = true;
+    private bool flag = true;
     public enemyGenerator enemyGenerator;
 
     
     private void Start()
     {
-        
     }
 
     private IEnumerator spawn_delay(int phaseSeconds, int maxEnemy, float spawnRate)
@@ -27,6 +27,12 @@ public class WaveManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameObject.FindWithTag("Player") != null && flag)
+        {
+            flag = false;
+            enemyGenerator = GameObject.FindWithTag("Player").GetComponent<enemyGenerator>();
+        }
+        
         waveScenario();
     }
 

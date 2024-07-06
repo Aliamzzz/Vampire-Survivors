@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Unity.Mathematics;
 
 public class Slime : MonoBehaviour
 {
@@ -14,7 +15,10 @@ public class Slime : MonoBehaviour
     public float speed = 2f;
     public int HP;
     private bool active = true;
-    
+
+    [SerializeField] private GameObject GEM;
+    [SerializeField] private GameObject heart;
+
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -52,6 +56,13 @@ public class Slime : MonoBehaviour
         {
             
             _destroyObject.enabled = true;
+            int rnd = UnityEngine.Random.Range(0, 13);
+            if (rnd % 5 == 0)
+            {
+                Instantiate(heart, gameObject.transform.position, Quaternion.identity);
+            }
+            
+            Instantiate(GEM, gameObject.transform.position, Quaternion.identity);
             gameObject.GetComponent<PolygonCollider2D>().enabled = false;
             player.gameObject.GetComponent<enemyGenerator>()._currentEnemyCount--;
             camera.gameObject.GetComponent<Timer>().kills++;

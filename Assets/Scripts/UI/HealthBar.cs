@@ -40,4 +40,9 @@ public class HealthBar : MonoBehaviour
     { 
         bar.fillAmount = health / 150f;
     }
+
+    public void addHealth(int health)
+    {
+        bar.fillAmount = (_healthOfPlayer + health) / 150f;
+    }
 }
