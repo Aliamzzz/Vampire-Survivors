@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 602391670279779085}
   - component: {fileID: 3588452792151839127}
   m_Layer: 0
-  m_Name: Slime
+  m_Name: Ghoul
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 1460552816, guid: 2c5f925118ee6df45b1036c7e400551d, type: 3}
+  m_Sprite: {fileID: -596567650, guid: 792fb2943e8bc5641a2beb5fa380b2e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,11 +104,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   waveManager: {fileID: 0}
-  speed: 1
+  speed: 2
   HP: 0
   GEM: {fileID: 3524998066115204859, guid: 054da9dd0024dc041891c0efb49d35a3, type: 3}
   heart: {fileID: 8791407039787364942, guid: 53abaa86fde5a864ebcedc58428f8d81, type: 3}
-  leftSprite: 1
+  leftSprite: 0
 --- !u!114 &5191751097968800329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b12512de277a6b345bf6bf279c23acf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 8791407039787364942, guid: 53abaa86fde5a864ebcedc58428f8d81, type: 3}
+  player: {fileID: 0}
 --- !u!95 &1626112674670385844
 Animator:
   serializedVersion: 5
@@ -145,7 +145,7 @@ Animator:
   m_GameObject: {fileID: 7723170634835189795}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3a890a71eadd5a24ebbaaf003fb1d840, type: 2}
+  m_Controller: {fileID: 9100000, guid: 99537f597cd5e6c42889e5241249090d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -219,7 +219,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 0.225, y: 0.19166666}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -227,10 +227,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.08, y: -0.16}
-      - {x: 0.08, y: -0.16}
-      - {x: 0.08, y: -0.099999994}
-      - {x: 0.049999997, y: -0.04}
-      - {x: -0.02, y: -0.04}
-      - {x: -0.08, y: -0.089999996}
+    - - {x: -0.053215347, y: -0.09839529}
+      - {x: 0.037144568, y: -0.093038395}
+      - {x: 0.07598229, y: 0.015173979}
+      - {x: 0.036607668, y: 0.09928017}
+      - {x: -0.009286093, y: 0.101958595}
+      - {x: -0.085356876, y: 0.0037461892}
   m_UseDelaunayMesh: 0

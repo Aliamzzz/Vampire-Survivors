@@ -10,7 +10,8 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-
+    public bool playerInstantiated = false;
+    public bool intoTheGame = false;
     [SerializeField] public GameObject fighter;
     [SerializeField] public GameObject assassin;
 
@@ -51,10 +52,14 @@ public class Menu : MonoBehaviour
         if (isFighter)
         {
             Instantiate(fighter, Vector3.zero, quaternion.identity);
+            playerInstantiated = true;
+            intoTheGame = true;
         }
         else
         {
             Instantiate(assassin, Vector3.zero, quaternion.identity);
+            playerInstantiated = true;
+            intoTheGame = true;
         }
 
         selectionHeroPanel.SetActive(false);

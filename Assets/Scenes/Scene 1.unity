@@ -2384,7 +2384,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef461e36e9d55c048908b35d78440d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyGenerator: {fileID: 0}
+  _currentEnemyCount: 0
+  slimeGenerator: {fileID: 0}
+  ghoulGenerator: {fileID: 0}
 --- !u!114 &520474094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7524,6 +7526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008ad0a062ad2ef42a9a6d0cd8e2a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInstantiated: 0
+  intoTheGame: 0
   fighter: {fileID: 9152136280766047301, guid: 73050ab360bef4d49a3274c1194fced1, type: 3}
   assassin: {fileID: 67521300301029381, guid: 6944e8c111ab8f14d841e7c17c3f9d78, type: 3}
   pausePanel: {fileID: 614457975}
@@ -7542,7 +7546,7 @@ MonoBehaviour:
   levelUpPanel: {fileID: 2079894939}
   maxXP: 25
   XP: 0
-  levelText: {fileID: 0}
+  levelText: {fileID: 1996400248}
 --- !u!1 &1550657924
 GameObject:
   m_ObjectHideFlags: 0

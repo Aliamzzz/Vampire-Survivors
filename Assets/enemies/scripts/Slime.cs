@@ -12,6 +12,7 @@ public class Slime : MonoBehaviour
     private DestroyObject _destroyObject;
     private SpriteRenderer _spriteRenderer;
     public GameObject target;
+    public WaveManager waveManager;
     public float speed = 2f;
     public int HP;
     private bool active = true;
@@ -19,8 +20,11 @@ public class Slime : MonoBehaviour
     [SerializeField] private GameObject GEM;
     [SerializeField] private GameObject heart;
 
+    public bool leftSprite;
+    
     private void Start()
     {
+        waveManager = GameObject.Find("EventSystem").GetComponent<WaveManager>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _destroyObject = GetComponent<DestroyObject>();
         HP = 10;
@@ -43,13 +47,28 @@ public class Slime : MonoBehaviour
         {
             transform.Translate((target.transform.position - transform.position).normalized * (speed*Time.deltaTime));
         }
-        if ((target.transform.position - transform.position).normalized.x > 0) 
-        { 
-            _spriteRenderer.flipX = true;
+
+        if (leftSprite)
+        {
+            if ((target.transform.position - transform.position).normalized.x > 0)
+            {
+                _spriteRenderer.flipX = true;
+            }
+            else
+            {
+                _spriteRenderer.flipX = false;
+            }
         }
-        else 
-        { 
-            _spriteRenderer.flipX = false;
+        else
+        {
+            if ((target.transform.position - transform.position).normalized.x > 0)
+            {
+                _spriteRenderer.flipX = false;
+            }
+            else
+            {
+                _spriteRenderer.flipX = true;
+            }
         }
 
         if (HP <= 0 && active)
@@ -64,7 +83,7 @@ public class Slime : MonoBehaviour
             
             Instantiate(GEM, gameObject.transform.position, Quaternion.identity);
             gameObject.GetComponent<PolygonCollider2D>().enabled = false;
-            player.gameObject.GetComponent<enemyGenerator>()._currentEnemyCount--;
+            waveManager._currentEnemyCount--;
             camera.gameObject.GetComponent<Timer>().kills++;
             active = false;
             StartCoroutine(delay());
@@ -75,7 +94,7 @@ public class Slime : MonoBehaviour
             _destroyObject.enabled = true;
             if (active)
             {
-                player.gameObject.GetComponent<enemyGenerator>()._currentEnemyCount--;
+                waveManager._currentEnemyCount--;
                 active = false;
                 StartCoroutine(delay());
             }

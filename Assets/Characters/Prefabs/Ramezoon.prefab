@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2299051593922188532}
   - component: {fileID: 702880807045026876}
   - component: {fileID: 7071027937168319097}
+  - component: {fileID: 8275236433255517757}
   m_Layer: 0
   m_Name: Ramezoon
   m_TagString: Player
@@ -111,6 +112,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   lookLeft: 0
   mainCamera: {fileID: 0}
+  alive: 1
 --- !u!95 &8040431020319180793
 Animator:
   serializedVersion: 5
@@ -216,11 +218,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 808474a19fad7e24f8279e60d7e7c982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 7723170634835189795, guid: d7ac5522a0f5f574282b336c87bbaa3a, type: 3}
+  enemy: {fileID: 7723170634835189795, guid: d7ac5522a0f5f574282b336c87bbaa3a, type: 3}
   dangerRadius: 9
   player: {fileID: 6517779058150908304}
   _maxEnemyCount: 10
-  _currentEnemyCount: 0
+  waveManager: {fileID: 0}
   _spawnRate: 1.5
 --- !u!114 &7071027937168319097
 MonoBehaviour:
@@ -240,6 +242,24 @@ MonoBehaviour:
   max: 25
   current: 0
   _spawnRate: 15
+--- !u!114 &8275236433255517757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67521300301029381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceac0bca71606ea4880f0092e4a81530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 7723170634835189795, guid: 03a2a4226e6449a4b866ee6c79b38188, type: 3}
+  dangerRadius: 3
+  player: {fileID: 6517779058150908304}
+  _maxEnemyCount: 0
+  waveManager: {fileID: 0}
+  _spawnRate: 1.5
 --- !u!1 &477076066063770298
 GameObject:
   m_ObjectHideFlags: 0

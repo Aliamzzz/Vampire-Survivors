@@ -2470,6 +2470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008ad0a062ad2ef42a9a6d0cd8e2a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInstantiated: 0
+  intoTheGame: 0
   fighter: {fileID: 9152136280766047301, guid: 73050ab360bef4d49a3274c1194fced1, type: 3}
   assassin: {fileID: 67521300301029381, guid: 6944e8c111ab8f14d841e7c17c3f9d78, type: 3}
   pausePanel: {fileID: 0}
