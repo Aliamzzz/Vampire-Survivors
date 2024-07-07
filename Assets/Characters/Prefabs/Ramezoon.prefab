@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6517779058150908304}
   - component: {fileID: 3644168132053141188}
   - component: {fileID: 2362020625963406}
+  - component: {fileID: -3244942737391820450}
   - component: {fileID: 8040431020319180793}
   - component: {fileID: 8377448158220552985}
   - component: {fileID: 2299051593922188532}
@@ -113,6 +114,25 @@ MonoBehaviour:
   lookLeft: 0
   mainCamera: {fileID: 0}
   alive: 1
+--- !u!114 &-3244942737391820450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67521300301029381}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c523e1fcaa5794f966835d3f977ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  knifeFireRate: 1.5
+  firePoint: {fileID: 6517779058150908304}
+  player: {fileID: 0}
+  knife: {fileID: 3487698292712509653, guid: d1bc7ed7ca8733a4f818649196f26d98, type: 3}
+  sound: {fileID: 3228550827026642321, guid: dc8372a71c4ea3c4c8a70317734eb2fb, type: 3}
+  knifeSpeed: 1
 --- !u!95 &8040431020319180793
 Animator:
   serializedVersion: 5
@@ -249,7 +269,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67521300301029381}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceac0bca71606ea4880f0092e4a81530, type: 3}
   m_Name: 

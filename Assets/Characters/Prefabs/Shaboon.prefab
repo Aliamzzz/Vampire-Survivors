@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 5367735466973265207}
   - component: {fileID: 6126567472068657678}
   - component: {fileID: 4231688543468047389}
+  - component: {fileID: -1627178044007606220}
   - component: {fileID: 3698505472469062327}
   - component: {fileID: 1645680081238682435}
   - component: {fileID: 4507752297336206168}
@@ -194,6 +195,25 @@ MonoBehaviour:
   lookLeft: 0
   mainCamera: {fileID: 0}
   alive: 1
+--- !u!114 &-1627178044007606220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152136280766047301}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c523e1fcaa5794f966835d3f977ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  knifeFireRate: 0
+  firePoint: {fileID: 0}
+  player: {fileID: 0}
+  knife: {fileID: 0}
+  sound: {fileID: 0}
+  knifeSpeed: 0
 --- !u!95 &3698505472469062327
 Animator:
   serializedVersion: 5
