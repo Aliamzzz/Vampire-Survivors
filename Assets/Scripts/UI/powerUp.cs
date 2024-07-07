@@ -12,16 +12,21 @@ public class powerUp : MonoBehaviour
     
     [SerializeField] private GameObject PowerUpPanel;
     [SerializeField] private TextMeshProUGUI speedPriceText;
-    public int speedPriceValue = 50;
+    public int speedPriceValue = 5;
     [SerializeField] private TextMeshProUGUI healthPriceText;
-    public int healthPriceValue = 30;
+    public int healthPriceValue = 10;
     [SerializeField] private TextMeshProUGUI speedLevelText;
-    public int speedLevelValue;
+    public static int speedLevelValue;
     [SerializeField] private TextMeshProUGUI healthLevelText;
-    public int healthLevelValue;
+    public static int healthLevelValue;
 
     public void Start()
     {
+        if (!Login.isLogin)
+        {
+            healthLevelValue = 1;
+            speedLevelValue = 1;
+        }
         speedLevelText.text = "Speed :" + speedLevelValue;
         healthLevelText.text = "Health : " + healthLevelValue;
         speedPriceText.text = "Price : " + speedPriceValue;
@@ -30,6 +35,9 @@ public class powerUp : MonoBehaviour
 
     private void Update()
     {
+        speedPriceValue = speedLevelValue * 5;
+        healthPriceValue = healthLevelValue * 10;
+
         if (speedLevelValue == 5)
         {
             speedPriceText.text = "MAX";
@@ -39,28 +47,36 @@ public class powerUp : MonoBehaviour
         {
             healthPriceText.text = "MAX";
         }
+        healthLevelText.text = "Health : " + healthLevelValue;
+        healthPriceText.text = "Price : " + healthPriceValue;
+        speedLevelText.text = "Speed : " + speedLevelValue;
+        speedPriceText.text = "Price : " + speedPriceValue;
     }
 
     public void speedPower()
     {
-        if (speedLevelValue <= 4)
+        if (Information.coinCounter(speedPriceValue))
         {
-            speedLevelValue++;
-            speedLevelText.text = "Speed :" + speedLevelValue;
-            speedPriceValue += 25;
-            speedPriceText.text = "Price : " + speedPriceValue;
+            if (speedLevelValue <= 4)
+            {
+                speedLevelValue++;
+            }
         }
+        // speedLevelText.text = "Speed : " + speedLevelValue;
+        // speedPriceText.text = "Price : " + speedPriceValue;
     }
 
     public void healthPower()
     {
-        if (healthLevelValue <= 4)
+        if (Information.coinCounter(healthPriceValue))
         {
-            healthLevelValue++;
-            healthLevelText.text = "Health :" + healthLevelValue;
-            healthPriceValue += 15;
-            healthPriceText.text = "Price : " + healthPriceValue;
+            if (healthLevelValue <= 4)
+            {
+                healthLevelValue++;
+            }
         }
+        // healthLevelText.text = "Health : " + healthLevelValue;
+        // healthPriceText.text = "Price : " + healthPriceValue;
     }
 
     public void backMenu()

@@ -208,12 +208,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  knifeFireRate: 0
-  firePoint: {fileID: 0}
+  knifeFireRate: 1.5
+  firePoint: {fileID: 5367735466973265207}
   player: {fileID: 0}
-  knife: {fileID: 0}
-  sound: {fileID: 0}
-  knifeSpeed: 0
+  knife: {fileID: 3487698292712509653, guid: d1bc7ed7ca8733a4f818649196f26d98, type: 3}
+  sound: {fileID: 3228550827026642321, guid: dc8372a71c4ea3c4c8a70317734eb2fb, type: 3}
+  knifeSpeed: 1
 --- !u!95 &3698505472469062327
 Animator:
   serializedVersion: 5

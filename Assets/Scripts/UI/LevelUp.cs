@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,41 +9,43 @@ public class LevelUp : MonoBehaviour
 
     [SerializeField] private GameObject panel;
     
-    private int speedLevel;
-    [SerializeField] public TextMeshProUGUI speedText;
+    private int knifeLevel = 0;
+    [SerializeField] public TextMeshProUGUI swordText;
     
-    private int healthLevel;
-    [SerializeField] public TextMeshProUGUI healthText;
-    
-    public void helathSelected()
+    private int swordLevel = 0;
+    [SerializeField] public TextMeshProUGUI knifeText;
+
+    private void Update()
     {
-        if (healthLevel < 5)
-        {
-            healthLevel++;
-            healthText.text = "Health : " + healthLevel;
-        }
-        else
-        {
-            healthText.text = "Max Level";
-        }
-        Time.timeScale = 1;
-        panel.SetActive(false);
+        swordText.text = "Sword : " + swordLevel;
+        knifeText.text = "Knife : " + knifeLevel;
     }
 
-    public void speedSelected()
+    public void KnifeSelected()
     {
-        if (speedLevel < 5)
+        if (knifeLevel == 0)
         {
-            speedLevel++;
-            speedText.text = "Speed : " + speedLevel;
+            knifeLevel++;
+            Time.timeScale = 1;
+            GameObject.FindWithTag("Player").GetComponent<KnifeGenterator>().enabled = true;
+            panel.SetActive(false);
         }
-        else
+        if (knifeLevel >= 1 && knifeLevel < 6)
         {
-            speedText.text = "Max Level";
+            knifeLevel++;
+            Time.timeScale = 1;
+            GameObject.FindWithTag("Player").GetComponent<KnifeGenterator>().knifeFireRate -= 0.29f;
+            panel.SetActive(false);
+            
         }
-        Time.timeScale = 1;
-        panel.SetActive(false);
+    }
 
+    public void SwordSelected()
+    {
+        swordLevel++;
+        Time.timeScale = 1;
+        GameObject.Find("weapon generator").GetComponent<WeaponGenerator>().swordFireRate -= 0.29f;
+        panel.SetActive(false);
     }
     
     

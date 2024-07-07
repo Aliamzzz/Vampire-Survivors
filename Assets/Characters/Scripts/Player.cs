@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        HP = powerUp.healthLevelValue * 25 + 100;
+        playerSpeed = (float)(powerUp.speedLevelValue * 0.5) + 3;
         animator = GetComponent<Animator>();
         transform = GetComponent<Transform>();
     }

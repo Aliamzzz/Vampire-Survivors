@@ -28,18 +28,25 @@ public class Menu : MonoBehaviour
     [SerializeField] private WorldScroling ws;
 
     [SerializeField] private GameObject userPanel;
-    [SerializeField] private GameObject signInPanel;
+    [SerializeField] private GameObject signUpPanel;
     [SerializeField] private GameObject loginPanel;
 
     [SerializeField] private TextMeshProUGUI coinText;
-    public int coinNum = 0;
+    public static int coinNum = 0;
+    public int inGameCoinNum = 0;
 
     [SerializeField] private GameObject levelUpPanel;
-    public int maxXP = 25;
+    public int maxXP = 5;
     public int XP;
     [SerializeField] public TextMeshProUGUI levelText;
     private int level = 1;
 
+    [SerializeField] private SignUp _signUp;
+    [SerializeField] private Login _login;
+    [SerializeField] public GameObject loggedIn;
+
+    public int bestScore = 0;
+    public bool gameOver = false;
 
     public void playGame()
     {
@@ -96,12 +103,16 @@ public class Menu : MonoBehaviour
 
     public void goMenu()
     {
+        coinNum = inGameCoinNum;
         SceneManager.LoadScene(0);
+        AudioListener.pause = false;
         Time.timeScale = 1;
     }
 
     public void quitGame()
     {
+        gameOver = true;
+        StartCoroutine(delay());
         Application.Quit();
         // barHealth.SetActive(true);
     }
@@ -124,10 +135,24 @@ public class Menu : MonoBehaviour
 
     public void userlogPanel()
     {
-        if (!PowerUpPanel.activeSelf)
+        if (SignUp.isSignUp || Login.isLogin)
         {
-            userPanel.SetActive(!userPanel.activeSelf);
+            loggedIn.SetActive(true);
+            StartCoroutine(delay());
         }
+        else
+        {
+            if (!PowerUpPanel.activeSelf)
+            {
+                userPanel.SetActive(!userPanel.activeSelf);
+            }
+        }
+    }
+
+    private IEnumerator delay()
+    {
+        yield return new WaitForSeconds(1f);
+        loggedIn.SetActive(false);
     }
 
     public void login()
@@ -136,17 +161,31 @@ public class Menu : MonoBehaviour
         loginPanel.SetActive(true);
     }
 
-    public void signIn()
+    public void signUp()
     {
         userPanel.SetActive(false);
-        signInPanel.SetActive(true);
+        signUpPanel.SetActive(true);
     }
+
+    // private void Start()
+    // {
+    //     if (PlayerPrefs.HasKey("coin"))
+    //     {
+    //         coinNum = PlayerPrefs.GetInt("coin");
+    //         bestScore = PlayerPrefs.GetInt("best");
+    //     }
+    // }
 
     public void Update()
     {
         if (SceneManager.GetActiveScene().name.Equals("Scene 1"))
         {
-            coinText.text = "Coins : " + coinNum;
+            coinText.text = "Coins : " + inGameCoinNum;
+        }
+
+        if (XP > bestScore)
+        {
+            bestScore = XP;
         }
 
         if (XP > maxXP)
@@ -158,11 +197,16 @@ public class Menu : MonoBehaviour
         {
             pauseGame();
         }
+        //
+        // PlayerPrefs.SetInt("coin", coinNum);
+        // PlayerPrefs.SetInt("best", bestScore);
+        // PlayerPrefs.Save();
     }
+
 
     public void addCoin()
     {
-        coinNum++;
+        inGameCoinNum++;
     }
 
     public void addXP()
@@ -173,7 +217,7 @@ public class Menu : MonoBehaviour
     private void inGameLevelUp()
     {
         Time.timeScale = 0;
-        maxXP += 25;
+        maxXP += 5;
         XP = 0;
         levelUpPanel.SetActive(true);
         levelText.text = "Level : " + ++level;

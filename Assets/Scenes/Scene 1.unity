@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 42209351}
   - component: {fileID: 42209350}
   m_Layer: 5
-  m_Name: Speed name
+  m_Name: knife name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 158097688}
   - component: {fileID: 158097687}
   m_Layer: 5
-  m_Name: health image
+  m_Name: sword image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1080,17 +1080,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158097685}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.03283694, w: 0.99946076}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1846190929}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.764}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076294, y: 0.000011444}
-  m_SizeDelta: {x: 251.5857, y: 237.847}
+  m_AnchoredPosition: {x: 0, y: 0.0000038146973}
+  m_SizeDelta: {x: 133.21, y: 117.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158097687
 MonoBehaviour:
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7756f9504a0d894dbed095538346f35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1547a6c352da7b64d9b0d35c3ff6a575, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 300221910}
   - component: {fileID: 300221909}
   m_Layer: 5
-  m_Name: Health Level
+  m_Name: sword Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2315,6 +2315,7 @@ GameObject:
   - component: {fileID: 520474093}
   - component: {fileID: 520474094}
   - component: {fileID: 520474095}
+  - component: {fileID: 520474096}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2412,6 +2413,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 592252192}
+--- !u!114 &520474096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520474089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb17f529e44a41740a44da806c8fbb3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 2079894939}
+  swordText: {fileID: 300221909}
+  knifeText: {fileID: 1467545825}
 --- !u!1001 &524322309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6593,7 +6609,7 @@ GameObject:
   - component: {fileID: 1403093933}
   - component: {fileID: 1403093932}
   m_Layer: 5
-  m_Name: Speed
+  m_Name: knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6664,9 +6680,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2079894943}
+      - m_Target: {fileID: 520474096}
         m_TargetAssemblyTypeName: LevelUp, Assembly-CSharp
-        m_MethodName: speedSelected
+        m_MethodName: KnifeSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6860,7 +6876,7 @@ GameObject:
   - component: {fileID: 1420829490}
   - component: {fileID: 1420829489}
   m_Layer: 5
-  m_Name: health name
+  m_Name: sword name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7025,7 +7041,7 @@ GameObject:
   - component: {fileID: 1467545826}
   - component: {fileID: 1467545825}
   m_Layer: 5
-  m_Name: speed level
+  m_Name: knife level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7070,7 +7086,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Speed : 0'
+  m_text: 'Knife : 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c078d46110e0dad429e2079ed77e133f, type: 2}
   m_sharedMaterial: {fileID: 2298680539397913310, guid: c078d46110e0dad429e2079ed77e133f, type: 2}
@@ -7330,9 +7346,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 969087446}
-        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
-        m_MethodName: backMenu
+      - m_Target: {fileID: 1542743322}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: goMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7539,14 +7555,19 @@ MonoBehaviour:
   go: {fileID: 969087446}
   ws: {fileID: 463417552}
   userPanel: {fileID: 0}
-  signInPanel: {fileID: 0}
+  signUpPanel: {fileID: 0}
   loginPanel: {fileID: 0}
   coinText: {fileID: 958366360}
-  coinNum: 0
+  inGameCoinNum: 0
   levelUpPanel: {fileID: 2079894939}
-  maxXP: 25
+  maxXP: 5
   XP: 0
   levelText: {fileID: 1996400248}
+  _signUp: {fileID: 0}
+  _login: {fileID: 0}
+  loggedIn: {fileID: 0}
+  bestScore: 0
+  gameOver: 0
 --- !u!1 &1550657924
 GameObject:
   m_ObjectHideFlags: 0
@@ -8893,7 +8914,7 @@ GameObject:
   - component: {fileID: 1753918923}
   - component: {fileID: 1753918922}
   m_Layer: 5
-  m_Name: Speed image
+  m_Name: knife image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8906,17 +8927,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753918920}
-  m_LocalRotation: {x: -0, y: -0, z: 0.26954684, w: 0.9629873}
+  m_LocalRotation: {x: -0.0057868296, y: -0.00018079222, z: 0.90062696, w: 0.43455443}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1403093931}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 31.275}
+  m_LocalEulerAnglesHint: {x: -0.27, y: -0.606, z: 128.487}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.199951, y: 0}
-  m_SizeDelta: {x: 161.4425, y: 164.5439}
+  m_AnchoredPosition: {x: 0.000030517578, y: 8.999992}
+  m_SizeDelta: {x: 68.3, y: 226.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1753918922
 MonoBehaviour:
@@ -8938,7 +8959,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7f79214650bb9e4d85b142f927308ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a77562b59e8589947883595dfd886a5c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9804,7 +9825,7 @@ GameObject:
   - component: {fileID: 1846190931}
   - component: {fileID: 1846190930}
   m_Layer: 5
-  m_Name: Health
+  m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9875,9 +9896,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2079894943}
+      - m_Target: {fileID: 520474096}
         m_TargetAssemblyTypeName: LevelUp, Assembly-CSharp
-        m_MethodName: helathSelected
+        m_MethodName: SwordSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10770,7 +10791,6 @@ GameObject:
   - component: {fileID: 2079894940}
   - component: {fileID: 2079894942}
   - component: {fileID: 2079894941}
-  - component: {fileID: 2079894943}
   m_Layer: 5
   m_Name: LevelUpPanel
   m_TagString: Untagged
@@ -10838,21 +10858,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079894939}
   m_CullTransparentMesh: 1
---- !u!114 &2079894943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2079894939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb17f529e44a41740a44da806c8fbb3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 2079894939}
-  speedText: {fileID: 1467545825}
-  healthText: {fileID: 300221909}
 --- !u!4 &2099409130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6078404111379943168, guid: 3bdb8673aeb3f6447a8e773e3e6dc1f3, type: 3}
@@ -11345,6 +11350,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: pause
       objectReference: {fileID: 0}
+    - target: {fileID: 3074802053581676703, guid: 789af03ebc3cb6e4bb115dcf940500d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986036897139825528, guid: 789af03ebc3cb6e4bb115dcf940500d0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986036897139825528, guid: 789af03ebc3cb6e4bb115dcf940500d0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7052086180812706670, guid: 789af03ebc3cb6e4bb115dcf940500d0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11437,6 +11454,10 @@ PrefabInstance:
       propertyPath: ws
       value: 
       objectReference: {fileID: 463417552}
+    - target: {fileID: 8599383797275657193, guid: 789af03ebc3cb6e4bb115dcf940500d0, type: 3}
+      propertyPath: maxXP
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8599383797275657193, guid: 789af03ebc3cb6e4bb115dcf940500d0, type: 3}
       propertyPath: coinNum
       value: 0
