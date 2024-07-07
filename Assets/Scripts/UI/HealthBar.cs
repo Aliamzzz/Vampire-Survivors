@@ -25,7 +25,7 @@ public class HealthBar : MonoBehaviour
             _healthOfPlayer = player.HP;
 
             takeDamege(_healthOfPlayer);
-            if (_healthOfPlayer > 80)
+            if (_healthOfPlayer > _maxhealt / 2)
             {
                 fullHeart.SetActive(true);
                 halfHeart.SetActive(false);
@@ -40,11 +40,11 @@ public class HealthBar : MonoBehaviour
 
     public void takeDamege(float health)
     { 
-        bar.fillAmount = health / 150f;
+        bar.fillAmount = health / _maxhealt;
     }
 
     public void addHealth(int health)
     {
-        bar.fillAmount = (_healthOfPlayer + health) / 150f;
+        bar.fillAmount = (_healthOfPlayer + health) / _maxhealt;
     }
 }
