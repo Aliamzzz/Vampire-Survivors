@@ -105,7 +105,7 @@ MonoBehaviour:
   target: {fileID: 0}
   waveManager: {fileID: 0}
   speed: 1
-  HP: 0
+  HP: 10
   GEM: {fileID: 3524998066115204859, guid: 054da9dd0024dc041891c0efb49d35a3, type: 3}
   heart: {fileID: 8791407039787364942, guid: 53abaa86fde5a864ebcedc58428f8d81, type: 3}
   leftSprite: 1

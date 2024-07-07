@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 4507752297336206168}
   - component: {fileID: 8201921801373387238}
   - component: {fileID: -2912703557519620709}
+  - component: {fileID: 8817139668798726524}
   - component: {fileID: 1675904293649865183}
   m_Layer: 0
   m_Name: Shaboon
@@ -338,6 +339,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7723170634835189795, guid: 03a2a4226e6449a4b866ee6c79b38188, type: 3}
+  dangerRadius: 9
+  player: {fileID: 5367735466973265207}
+  _maxEnemyCount: 0
+  waveManager: {fileID: 0}
+  _spawnRate: 1.5
+--- !u!114 &8817139668798726524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152136280766047301}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b11bf7bf808bfc43ad5fa1411240fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 7723170634835189795, guid: 25df637b83b2e9e49b304ad0cfbb0759, type: 3}
   dangerRadius: 9
   player: {fileID: 5367735466973265207}
   _maxEnemyCount: 0

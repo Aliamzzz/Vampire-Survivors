@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     
     private Transform _transform;
     
-    public float HP = 100;
+    public float HP;
     
     public float playerSpeed;
     

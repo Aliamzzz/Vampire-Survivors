@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
         waveManager = GameObject.Find("EventSystem").GetComponent<WaveManager>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _destroyObject = GetComponent<DestroyObject>();
-        HP = 10;
+        //HP = 10;
         camera = GameObject.Find("Main Camera");
         player = GameObject.FindWithTag("Player");
         target = GameObject.Find("center");

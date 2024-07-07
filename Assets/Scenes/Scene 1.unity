@@ -2388,6 +2388,7 @@ MonoBehaviour:
   _currentEnemyCount: 0
   slimeGenerator: {fileID: 0}
   ghoulGenerator: {fileID: 0}
+  alienGenerator: {fileID: 0}
 --- !u!114 &520474094
 MonoBehaviour:
   m_ObjectHideFlags: 0
