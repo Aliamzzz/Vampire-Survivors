@@ -86,7 +86,7 @@ public class Enemy : MonoBehaviour
             waveManager._currentEnemyCount--;
             camera.gameObject.GetComponent<Timer>().kills++;
             active = false;
-            StartCoroutine(delay());
+            //StartCoroutine(delay());
         }
 
         if (Math.Abs((target.transform.position - transform.position).x) + Math.Abs((target.transform.position - transform.position).y) > 15)
