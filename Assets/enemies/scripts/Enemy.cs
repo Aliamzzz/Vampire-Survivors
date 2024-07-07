@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Unity.Mathematics;
 
-public class Slime : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     private GameObject camera;
     private GameObject player;

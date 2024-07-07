@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 0}
-  HP: 100
+  HP: 150
   playerSpeed: 0
   animator: {fileID: 0}
   lookLeft: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
   player: {fileID: 5367735466973265207}
   max: 25
   current: 0
-  _spawnRate: 15
+  _spawnRate: 5
 --- !u!1001 &5525867207100354755
 PrefabInstance:
   m_ObjectHideFlags: 0

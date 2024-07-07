@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 0}
-  HP: 150
+  HP: 100
   playerSpeed: 0
   animator: {fileID: 0}
   lookLeft: 0

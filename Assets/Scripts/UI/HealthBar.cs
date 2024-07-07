@@ -11,10 +11,12 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private GameObject halfHeart;
     public Player player;
     private float _healthOfPlayer;
+    private float _maxhealt;
 
     public void initialing()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        _maxhealt = player.HP;
     }
 
     private void Update()
