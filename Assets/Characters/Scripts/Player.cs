@@ -26,13 +26,13 @@ public class Player : MonoBehaviour
         //HP = 150;
         mainCamera = Camera.main;
         _transform = GetComponent<Transform>();
-        this.playerSpeed = 3;
+        //this.playerSpeed = 3;
     }
 
     void Start()
     {
         HP = powerUp.healthLevelValue * 25 + HP;
-        playerSpeed = (float)(powerUp.speedLevelValue * 0.5) + 3;
+        playerSpeed = (float)(powerUp.speedLevelValue * 0.5) + playerSpeed;
         animator = GetComponent<Animator>();
         transform = GetComponent<Transform>();
     }

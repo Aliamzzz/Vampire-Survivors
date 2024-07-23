@@ -12,8 +12,12 @@ public class WaveManager : MonoBehaviour
     public ghoulGenerator ghoulGenerator;
     public alienGenerator alienGenerator;
     private Menu menu;
-    
-    
+
+    private void Awake()
+    {
+        active1 = false;
+        active2 = false;
+    }
 
     private IEnumerator set_slime(int phaseSeconds, int maxEnemy, float spawnRate, bool active)
     {
@@ -136,7 +140,7 @@ public class WaveManager : MonoBehaviour
             StartCoroutine(set_slime(30, 10, 1.5f, false));
             StartCoroutine(set_ghoul(30, 10, 1.5f, true));
             StartCoroutine(set_alien(30, 10, 1.5f, false));
-            // Debug.Log("1");
+             Debug.Log("1");
         }
         if (!active1 && active2)
         {
@@ -144,17 +148,17 @@ public class WaveManager : MonoBehaviour
             active2 = false;
             StartCoroutine(set_slime(60, 20, 0.5f, true));
             StartCoroutine(set_ghoul(60, 20, 1.75f, false));
-            StartCoroutine(set_alien(60, 10, 1.5f, true));
-            // Debug.Log("2");
+            StartCoroutine(set_alien(60, 20, 1.5f, true));
+             Debug.Log("2");
         }
         if (active1 && !active2)
         {
             active1 = true;
             active2 = true;
             StartCoroutine(set_slime(90, 20, 0.5f, true));
-            StartCoroutine(set_ghoul(90, 10, 1.75f, true));
-            StartCoroutine(set_alien(90, 10, 1.5f, true));
-            // Debug.Log("3");
+            StartCoroutine(set_ghoul(90, 20, 1.75f, true));
+            StartCoroutine(set_alien(90, 20, 1.5f, true));
+             Debug.Log("3");
         }
     }
 

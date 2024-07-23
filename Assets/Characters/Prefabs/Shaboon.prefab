@@ -191,7 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transform: {fileID: 0}
   HP: 150
-  playerSpeed: 0
+  playerSpeed: 3
   animator: {fileID: 0}
   lookLeft: 0
   mainCamera: {fileID: 0}
