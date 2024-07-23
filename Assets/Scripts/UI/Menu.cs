@@ -14,15 +14,18 @@ public class Menu : MonoBehaviour
     public bool intoTheGame = false;
     [SerializeField] public GameObject fighter;
     [SerializeField] public GameObject assassin;
-
-    [SerializeField] private GameObject pausePanel;
+    public GameObject pausePanel; /// <summary>
+                                  /// ///////////
+                                  /// </summary>
     [SerializeField] private GameObject barHealth;
 
     [SerializeField] private GameObject selectionHeroPanel;
     [SerializeField] private GameObject descriptionPanel;
     private bool isFighter = true;
 
-    [SerializeField] private GameObject PowerUpPanel;
+    public GameObject PowerUpPanel; /// <summary>
+                                    /// 
+                                    /// </summary>
     [SerializeField] private HealthBar hb;
     [SerializeField] private GameOver go;
     [SerializeField] private WorldScroling ws;
@@ -35,7 +38,7 @@ public class Menu : MonoBehaviour
     public static int coinNum = 0;
     public int inGameCoinNum = 0;
 
-    [SerializeField] private GameObject levelUpPanel;
+    public GameObject levelUpPanel;
     public int maxXP = 5;
     public int XP;
     [SerializeField] public TextMeshProUGUI levelText;

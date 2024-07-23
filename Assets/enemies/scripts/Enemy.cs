@@ -91,7 +91,7 @@ public class Enemy : MonoBehaviour
 
         if (Math.Abs((target.transform.position - transform.position).x) + Math.Abs((target.transform.position - transform.position).y) > 15)
         {
-            _destroyObject.enabled = true;
+            Destroy(gameObject, 0);
             if (active)
             {
                 waveManager._currentEnemyCount--;

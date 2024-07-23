@@ -21,7 +21,6 @@ public class KnifeGenterator : MonoBehaviour
     private void Awake()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
-
     }
 
     private void Update()
